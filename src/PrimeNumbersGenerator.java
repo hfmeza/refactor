@@ -15,6 +15,8 @@ public class PrimeNumbersGenerator implements NumberGenerator {
         int[] listOfPrimes = new int[amountOfPrimes + 1];
         listOfPrimes[1] = 2;
 
+        //I'm not quite sure what mult refers to, so I keep the name as is, just adapting it to java
+        //naming conventions
         int[] mult = new int[ORDMAX+1];
 
         int currentNumber = 1;
@@ -51,15 +53,6 @@ public class PrimeNumbersGenerator implements NumberGenerator {
         
     }
 
-    public static void main (String[] args) {
-        PrimeNumbersGenerator generator = new PrimeNumbersGenerator();
-        int[] primes = generator.generateNumbers(10);
-
-        for (int i = 0; i < primes.length; i++) {
-            System.out.println(primes[i]);
-        }
-    }
-    
     
     
     
